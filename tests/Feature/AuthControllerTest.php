@@ -29,7 +29,7 @@ class AuthControllerTest extends TestCase
 
         $response = $this->post('/api/register', $userData);
 
-        $response->assertStatus(200)
+        $response->assertStatus(201)
             ->assertJson([
                 'message' => 'User created successfully',
             ]);
