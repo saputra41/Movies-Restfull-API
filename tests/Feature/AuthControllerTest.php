@@ -11,6 +11,7 @@ use Illuminate\Foundation\Testing\RefreshDatabase;
 
 class AuthControllerTest extends TestCase
 {
+    use RefreshDatabase;
     use WithFaker;
 
     /**
